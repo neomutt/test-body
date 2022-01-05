@@ -33,16 +33,17 @@ void bodylist_clear(struct BodyList *bl)
   }
 }
 
-void dump_body(struct Body *b)
+void dump_body(struct Body *b, int indent)
 {
-  dump_bodies(&b->children);
+  printf("%*sBody: %s\n", indent * 4, "", b->name);
+  dump_bodies(&b->children, indent + 1);
 }
 
-void dump_bodies(struct BodyList *bl)
+void dump_bodies(struct BodyList *bl, int indent)
 {
   struct Body *b = NULL;
   TAILQ_FOREACH(b, bl, entries)
   {
-    dump_body(b);
+    dump_body(b, indent);
   }
 }

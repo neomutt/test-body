@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "email.h"
@@ -23,7 +24,8 @@ struct Email *email_new(const char *subject)
 
 void dump_email(struct Email *e)
 {
-  dump_bodies(&e->body_parts);
+  printf("Email: %s\n", e->subject);
+  dump_bodies(&e->body_parts, 0);
 }
 
 void populate_email(struct Email *e)

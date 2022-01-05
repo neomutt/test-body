@@ -1,0 +1,167 @@
+digraph neomutt
+{
+	graph [
+		rankdir="TB"
+		nodesep="0.5"
+		ranksep="0.5"
+	];
+
+	node [
+		shape="plain"
+	];
+
+	edge [
+		penwidth="3.5"
+		arrowsize="1.0"
+		color="#4040ff"
+	];
+
+	email [
+		label=<<table cellspacing="0" border="1" rows="*" color="#d0d0d0">
+		<tr>
+			<td border="0" align="left" bgcolor="#ffffc0" port="top" colspan="3"><font color="#000000" point-size="20"><b>Email</b></font></td>
+		</tr>
+		</table>>
+	];
+
+	obj_0xa2b390 [
+		label=<<table cellspacing="0" border="1" rows="*" color="#d0d0d0">
+		<tr>
+			<td border="0" align="left" bgcolor="#c0c0ff" port="top" colspan="3"><font color="#000000" point-size="20"><b>Body</b></font></td>
+		</tr>
+		</table>>
+	];
+
+	obj_0xa2b450 [
+		label=<<table cellspacing="0" border="1" rows="*" color="#d0d0d0">
+		<tr>
+			<td border="0" align="left" bgcolor="#c0c0ff" port="top" colspan="3"><font color="#000000" point-size="20"><b>Body</b></font></td>
+		</tr>
+		</table>>
+	];
+
+	obj_0xa2b610 [
+		label=<<table cellspacing="0" border="1" rows="*" color="#d0d0d0">
+		<tr>
+			<td border="0" align="left" bgcolor="#c0c0ff" port="top" colspan="3"><font color="#000000" point-size="20"><b>Body</b></font></td>
+		</tr>
+		</table>>
+	];
+
+	obj_0xa2b8a0 [
+		label=<<table cellspacing="0" border="1" rows="*" color="#d0d0d0">
+		<tr>
+			<td border="0" align="left" bgcolor="#c0c0ff" port="top" colspan="3"><font color="#000000" point-size="20"><b>Body</b></font></td>
+		</tr>
+		</table>>
+	];
+
+	obj_0xa30480 [
+		label=<<table cellspacing="0" border="1" rows="*" color="#d0d0d0">
+		<tr>
+			<td border="0" align="left" bgcolor="#c0c0ff" port="top" colspan="3"><font color="#000000" point-size="20"><b>Body</b></font></td>
+		</tr>
+		</table>>
+	];
+
+	obj_0xa30540 [
+		label=<<table cellspacing="0" border="1" rows="*" color="#d0d0d0">
+		<tr>
+			<td border="0" align="left" bgcolor="#c0c0ff" port="top" colspan="3"><font color="#000000" point-size="20"><b>Body</b></font></td>
+		</tr>
+		</table>>
+	];
+
+	obj_0xa307d0 [
+		label=<<table cellspacing="0" border="1" rows="*" color="#d0d0d0">
+		<tr>
+			<td border="0" align="left" bgcolor="#c0c0ff" port="top" colspan="3"><font color="#000000" point-size="20"><b>Body</b></font></td>
+		</tr>
+		</table>>
+	];
+
+	obj_0xa301c0 [
+		label=<<table cellspacing="0" border="1" rows="*" color="#d0d0d0">
+		<tr>
+			<td border="0" align="left" bgcolor="#c0c0ff" port="top" colspan="3"><font color="#000000" point-size="20"><b>Body</b></font></td>
+		</tr>
+		</table>>
+	];
+
+	obj_0xa30280 [
+		label=<<table cellspacing="0" border="1" rows="*" color="#d0d0d0">
+		<tr>
+			<td border="0" align="left" bgcolor="#c0c0ff" port="top" colspan="3"><font color="#000000" point-size="20"><b>Body</b></font></td>
+		</tr>
+		</table>>
+	];
+
+	obj_0xa30890 [
+		label=<<table cellspacing="0" border="1" rows="*" color="#d0d0d0">
+		<tr>
+			<td border="0" align="left" bgcolor="#c0c0ff" port="top" colspan="3"><font color="#000000" point-size="20"><b>Body</b></font></td>
+		</tr>
+		</table>>
+	];
+
+	obj_0xa30ab0 [
+		label=<<table cellspacing="0" border="1" rows="*" color="#d0d0d0">
+		<tr>
+			<td border="0" align="left" bgcolor="#c0c0ff" port="top" colspan="3"><font color="#000000" point-size="20"><b>Body</b></font></td>
+		</tr>
+		</table>>
+	];
+
+	obj_0xa30b70 [
+		label=<<table cellspacing="0" border="1" rows="*" color="#d0d0d0">
+		<tr>
+			<td border="0" align="left" bgcolor="#c0c0ff" port="top" colspan="3"><font color="#000000" point-size="20"><b>Body</b></font></td>
+		</tr>
+		</table>>
+	];
+
+	obj_0xa2baf0 [
+		label=<<table cellspacing="0" border="1" rows="*" color="#d0d0d0">
+		<tr>
+			<td border="0" align="left" bgcolor="#c0c0ff" port="top" colspan="3"><font color="#000000" point-size="20"><b>Body</b></font></td>
+		</tr>
+		</table>>
+	];
+
+	email -> obj_0xa2b390
+	email -> obj_0xa2b450
+	email -> obj_0xa2b610
+	email -> obj_0xa2baf0
+
+	{ rank=same obj_0xa2b390 obj_0xa2b450 obj_0xa2b610 obj_0xa2baf0 }
+
+	obj_0xa2b610 -> obj_0xa2b8a0
+	obj_0xa2b610 -> obj_0xa301c0
+	obj_0xa2b610 -> obj_0xa30280
+
+	{ rank=same obj_0xa2b8a0 obj_0xa301c0 obj_0xa30280 }
+
+	obj_0xa2b8a0 -> obj_0xa30480
+	obj_0xa2b8a0 -> obj_0xa30540
+	obj_0xa2b8a0 -> obj_0xa307d0
+
+	{ rank=same obj_0xa30480 obj_0xa30540 obj_0xa307d0 }
+
+	obj_0xa30280 -> obj_0xa30890
+	obj_0xa30280 -> obj_0xa30ab0
+	obj_0xa30280 -> obj_0xa30b70
+
+	{ rank=same obj_0xa30890 obj_0xa30ab0 obj_0xa30b70 }
+
+	edge [
+		penwidth="1.5"
+		arrowsize="0.5"
+		color="#8080ff"
+		dir="both"
+	];
+
+	obj_0xa2b390 -> obj_0xa2b450 -> obj_0xa2b610 -> obj_0xa2baf0
+	obj_0xa2b8a0 -> obj_0xa301c0 -> obj_0xa30280
+	obj_0xa30480 -> obj_0xa30540 -> obj_0xa307d0
+	obj_0xa30890 -> obj_0xa30ab0 -> obj_0xa30b70
+}

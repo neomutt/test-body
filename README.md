@@ -22,13 +22,29 @@ The `Body`s are doubly-linked.
 The sample code mimics an email with lots of nested attachments.
 The code recursively dumps the structures.
 
-To compile: (with ASAN)
+**To compile**: (with ASAN)
 
 ```sh
 gcc -Wall -Wextra -Wpedantic -I. -fsanitize=address -o email *.c
 ```
 
-To run:
+**To run**:
+
 ```sh
 ./email
+```
+
+**Output**:
+
+```
+Email: refactoring
+Body: apple
+    Body: aardvark
+    Body: antelope
+Body: banana
+    Body: baboon
+    Body: buffalo
+    Body: bat
+Body: cherry
+    Body: chameleon
 ```
